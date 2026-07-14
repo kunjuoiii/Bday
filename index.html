@@ -73,7 +73,7 @@
       cursor: pointer;
     }
 
-    .balloon{
+    .flower{
       position: absolute;
       bottom:-160px;
       width:64px;
@@ -189,9 +189,9 @@ Always keep shining bright — the world needs your light. 💖<br><br>
     requestAnimationFrame(animate);
 
     // === Balloons ===
-    function spawnBalloon(){
+    function spawnflower(){
       const b=document.createElement('div');
-      b.className='balloon';
+      b.className='flower';
       const w=44+Math.random()*36;
       const h=w*1.25;
       b.style.width=w+'px';
@@ -209,7 +209,7 @@ Always keep shining bright — the world needs your light. 💖<br><br>
       }
       requestAnimationFrame(step);
     }
-    setInterval(spawnBalloon,700);
+    setInterval(spawnflower,700);
 
     // === Letter toggle ===
     const openBtn=document.getElementById('openLetter');
